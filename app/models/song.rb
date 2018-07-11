@@ -3,12 +3,12 @@ class Song < ActiveRecord::Base
   belongs_to :genre
   has_many :notes
 
-  def artist_name
+  def self.artist_name
     @artist = self.artist.name
     @artist
   end
 
-  def genre_name
+  def self.genre_name
     @genre = self.genre.name
     @genre
   end
