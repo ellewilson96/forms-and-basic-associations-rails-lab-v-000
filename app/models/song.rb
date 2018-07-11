@@ -4,7 +4,8 @@ class Song < ActiveRecord::Base
   has_many :notes
 
   def artist_name
-    self.artist.name
+    @artist = self.artist.name
+    @artist
   end
 
   def genre_name
