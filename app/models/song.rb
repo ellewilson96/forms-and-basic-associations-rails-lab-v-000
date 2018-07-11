@@ -9,6 +9,7 @@ class Song < ActiveRecord::Base
 
   def genre_name
     @genre = self.genre.name
+    @genre
   end
 
 
